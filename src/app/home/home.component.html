@@ -1,0 +1,32 @@
+<div class="home-container">
+  <div class="header">
+    <h1>Lodash 学习中心</h1>
+    <p>探索 Lodash 强大的工具函数，提升你的 JavaScript 开发效率</p>
+  </div>
+
+  <div class="categories-grid">
+    <div
+      *ngFor="let category of categories"
+      class="category-card"
+      [routerLink]="category.route"
+      [style.--card-color]="category.color"
+    >
+      <div class="card-header">
+        <span class="card-icon">{{ category.icon }}</span>
+        <h2 class="card-title">{{ category.title }}</h2>
+      </div>
+
+      <p class="card-description">{{ category.description }}</p>
+
+      <div class="card-methods">
+        <span *ngFor="let method of category.methods" class="method-tag">
+          _.{{ method }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>基于 Angular 18 构建 | <a href="https://lodash.com/docs/" target="_blank">查看官方文档</a></p>
+  </div>
+</div>

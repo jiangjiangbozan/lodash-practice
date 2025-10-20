@@ -1,0 +1,60 @@
+.practice-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  .back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .section {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      color: #1f2937;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #f3f4f6;
+    }
+
+    .example {
+      margin-bottom: 1.5rem;
+
+      h3 {
+        color: #374151;
+        margin-bottom: 0.5rem;
+      }
+
+      .code-block {
+        background: #1f2937;
+        color: #f9fafb;
+        padding: 1rem;
+        border-radius: 6px;
+        font-family: 'Monaco', 'Consolas', monospace;
+        margin-bottom: 0.5rem;
+        overflow-x: auto;
+      }
+
+      .result {
+        background: #f3f4f6;
+        padding: 1rem;
+        border-radius: 6px;
+        border-left: 4px solid #4f46e5;
+      }
+    }
+  }
+}
